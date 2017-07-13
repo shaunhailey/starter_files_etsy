@@ -26,12 +26,21 @@ function question2() {
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3() {
-  // Answer:
+  for (let i = 0; i < length; i++) {
+    if (data[i].currency_code === 'GBP') {
+      console.log(data[i].title + ' costs')
+      console.log(data[i].price + ' pounds')
+    }
+  }
 }
 
 // 4: Display a list of all items who are made of wood.
 function question4() {
-  // Answer:
+  for (let i = 0; i < length; i++) {
+    if (data[i].materials.includes('wood')) {
+      console.log(data[i].title)
+    }
+  }
 }
 
 // 5: Which items are made of eight or more materials?
